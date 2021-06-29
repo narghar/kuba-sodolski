@@ -1,0 +1,13 @@
+{
+  "title": "Title",
+  "apiUrl": "https://admin.rebenagesta.com/graphql",
+  "contactEmail": "email-when-messages-was-send@gmail.com",
+  "secretConfig": {
+    "emailSender": {
+      "host": "for example: serwer1981877.home.pl",
+      "user": "",
+      "password": ""
+    },
+    "propertyNotAvailableOnClientSide": "forSecurityReasons"
+  }
+}
