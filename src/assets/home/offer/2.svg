@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 30" width="26" height="30">
+	<title>Boxy oferta</title>
+	<defs>
+		<image  width="26" height="30" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAeCAMAAAAFBf7qAAAAAXNSR0IB2cksfwAAADNQTFRFAAAAyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKE4ApYAAAABF0Uk5TACBAMJ/v/69Q33BgzxCAv49zu2SpAAAAy0lEQVR4nK2S0RaEIAhEkXQqU+z/v3bB2i3T3aedh0544YAORB85VjnqNPmAquCnBrgZN8230kUr1lizp7hq5fImmwbblbhp4hkykJruLgFsP3lFyu1MOWG1IwHamawjIJoR7PuUIGSbYXBNZ5N4pJ4QJXgq2EdoR6Fhq9qMzsfh65TPo9/Ic3yiyL4isaBFbA/xf1TUkR6pL4WWb8Mvh6k9OmyX8QObxrZUqZl1A1hU3DLbqF3k6P5Yhi1c+/m0KMdSymfmXqK43IpeKD0I50q4HrIAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Boxy oferta">
+		<g id="Grupa 2">
+			<use id="-e-2" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

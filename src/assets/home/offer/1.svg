@@ -1,0 +1,14 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 28" width="26" height="28">
+	<title>Boxy oferta</title>
+	<defs>
+		<image  width="26" height="28" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAcCAMAAABIzV/hAAAAAXNSR0IB2cksfwAAADNQTFRFAAAAyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKyHYKE4ApYAAAABF0Uk5TADCv77//EHBAn4BgIN+Pz1DNdnxCAAAAqElEQVR4nH3SWxaEIAgAUBxEHXvY/lcbZHbSQD/Kzg0VBOA13A+M4dCbQgaxGCTyUBgEYyOHqReXGnnC0Ak8FJD+/Mp0DZabJLmFaG0kUokjMsBGUSi3ZWvUTiiPolAgSjwlhfh8GVbZTCeQ0C+VGhXUvQ441L3uE/pvXrwU/4s1r6EaC2cUr2poNeTP3ah8oe11Y/19bW64S6sBJr0x66hZH866d2iyE+egBenfAG05AAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Boxy oferta">
+		<g id="Grupa 3">
+			<use id="-e-1" href="#img1" x="0" y="0" />
+		</g>
+	</g>
+</svg>

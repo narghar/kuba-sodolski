@@ -1,0 +1,12 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 46" width="46" height="46">
+	<title>Blog</title>
+	<defs>
+		<image  width="46" height="46" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAAXNSR0IB2cksfwAAAThQTFRFAAAADiI3ESU5ESU7Eic6EiY5EiY7EiY6ESc6EiY6ESU5DiM5EiY7KDpNLD5QW2l3go2YjJWfjpehmKCpm6Orl6Coj5mif4qUWmh2KDpMKTtOEiQ5ABQ7MEJUZ3SB3eDj////ZXOAMURVABozACQkGi0/4OPl3uHkFys+AAArFys+ABw5Y3F9EyU6KTtO2t3hJjhLKTxODyc2VmVzEic5fIeSEyU6hZCaEyU6h5GbEyY7kpulEiU5EhISh4eHe3t7AAAAd3d3k5OTlpaWlp+oEyY5dnZ2/v7+aGhomJiYAgICpKSk/f39KSkpCQkJlZ6nlJSUkZukEic5iZOdESY5iJKcEyU6eISPEyU6VWRyEiQ6JjlLECA4KjxO2dzfKDpMZnOAYm99EyY52d3gM0RVFSk9AAAzZHF+W7u6cwAAAGh0Uk5TACVadYOBcXJ2f1kkZNvv7v//////////7vHZYg3G8v//8sQKB/n///oG+wnyYNz/1vAh71X/bf98/3r/b///////////bP///////////////3D/eP97/27vVPMg2v/U8/Ne/8P8BfNylS2EAAABpklEQVR4nJ3WCU/CMBQA4Oo6BU86EA886hA5vFDQjkPF+xY5BBRFEdT//w8sZETUdrz5kpcsy5eXrq/0gZAZff0KVrGCMR7gqfLEgzwd2KkqQ8PoZ4yMjo27iEbchBAPT42YDxPEq01OTc/4uvDs3PwCtYyFRd3f0UuBZWvcimAobNYO9MatiKy0+RygdntBevsr52Ga0tU1ztd7fOV3bET5fo9BNaWbW6h/HM5jcaS44Hx7B2EC58xAqgbniaTd6oobzlNpUfXdPXl1Ad/PSLyY04PMoYwPeATvDzJHIn58ItmZU6GXLIbSs/PMhQ3O/eWViMu6KvJWXb2+uYUvRljd/tpt7sygqE2Sfc9K2iTpqvTM3In0P06kY+LPW+l5z+Xt/vicXjgvFG3dBPclpEzCebmChqbg/OERDU/DefUJoWfwhV174fe77xXK62+t8aEHYbrRbM8mfwjG383RF44Alt94/+gM1hX9c8Ma1+rNcNfcXotuxrZZgqUYY8c8EzxZlmeOFe7LD9WXt1//CrbiO0bSSBuGccIzaZgPeaNYqjw+ddQXNc0M8xxAPgUAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<g id="Blog">
+		<use id="-e-02" href="#img1" x="0" y="0" />
+	</g>
+</svg>
