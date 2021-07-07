@@ -6,14 +6,16 @@
     body {
         @apply font-body;
     }
+    h2 {
+        @apply font-bold text-5xl leading-tight;
+    }
+    .rebena {
+        @apply font-light text-base text-[#65788a]
+    }
 }
 
 @layer components {
-    .test {
-        @apply relative;
-
-        &.post_blog {
-            @apply bg-black;
-        }
-    }
+   .card-offer h4 {
+       @apply max-w-[362px] font-bold text-xl sm:text-[29px] text-white;
+   }
 }
