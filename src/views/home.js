@@ -1,21 +1,31 @@
-import DefaultLayout from "layouts/default";
 import Container from "components/container";
-import Button from "components/button";
+import MoreReference from "components/moreReference";
+import DefaultLayout from "layouts/default";
+import About from "views/home/about";
+import Blog from "views/home/blog";
+import Offer from "views/home/offer";
+import OrderSteps from "./home/order-steps";
+import Stats from "./home/stats";
+import Testimonials from "./home/testimonials";
+import WhyUs from "./home/why-us";
 
 const Home = () => {
   return (
     <DefaultLayout>
       <Container>
-        <div className="my-12">
-          <span className="text-2xl">Buttons</span>
-
-          <div className="mb-6">
-            <Button color="red">Red button</Button>
-          </div>
-          <div>
-            <Button color="green">Green button</Button>
-          </div>
-        </div>
+        <About />
+        <Offer />
+      </Container>
+      <OrderSteps />
+      <Container>
+        <WhyUs />
+      </Container>
+      <Stats />
+      <Container>
+        <Testimonials>
+          <MoreReference />
+        </Testimonials>
+        <Blog />
       </Container>
     </DefaultLayout>
   );
