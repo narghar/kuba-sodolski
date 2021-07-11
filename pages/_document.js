@@ -8,7 +8,8 @@ class MyDocument extends Document {
         <Head>
           {/*<link rel="preconnect" data-href="https://use.typekit.net/" />*/}
           {/*<link rel="preconnect" data-href="https://maxst.icons8.com/" />*/}
-          <link rel="stylesheet" href={"https://use.typekit.net/hhx8tkg.css"} />
+          {/* Font weight 300 not working properly with polish special letters */}
+          {/* <link rel="stylesheet" href={"https://use.typekit.net/hhx8tkg.css"} /> */}
           <link
             rel="stylesheet"
             href={"https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"}

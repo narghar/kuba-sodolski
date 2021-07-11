@@ -7,7 +7,7 @@ module.exports = withPlugins([], {
     const newConfig = { ...config };
     newConfig.module.rules.unshift({
       test: /\.svg$/,
-      use: ['@svgr/webpack', 'url-loader']
+      use: ["@svgr/webpack"],
     });
 
     return newConfig;
