@@ -13,14 +13,14 @@ const Menu = () => {
   }
   return (
     <div className="relative">
-      <div className="flex justify-end gap-1.5 pt-7">
+      <div className="flex justify-center sm:justify-end gap-1.5 pt-7">
         {languages.map((lang, i) => (
           <Button size="small" key={i}>
             {lang}
           </Button>
         ))}
       </div>
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between items-center mt-5 sm:mt-0">
         <div className="flex items-center gap-5">
           <Image src={logo} placeholder="blur" />
           <p className="text-white font-bold text-[21px]">

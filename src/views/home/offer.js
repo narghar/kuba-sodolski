@@ -2,12 +2,12 @@ import Button from "components/button";
 import OfferCards from "components/offerCards";
 const About = () => {
   return (
-    <section className="pt-48 pb-44">
-      <h2 className="text-primary max-w-[964px]">
+    <section className="pt-20 pb-20 md:pt-48 md:pb-44">
+      <h2 className="text-primary text-center md:text-left max-w-[964px]">
         Pełna obsługa językowa w jednym miejscu - zamów ją u doświadczonego
         tłumacza
       </h2>
-      <h3 className="text-secondary font-bold text-3xl mt-5 mb-20">
+      <h3 className="text-secondary text-center md:text-left font-bold text-3xl mt-5 mb-10 sm:mb-20">
         Tłumaczę angielski, włoski, francuski
       </h3>
       <OfferCards />

@@ -11,7 +11,7 @@
         @apply font-body;
     }
     h2 {
-        @apply font-bold text-5xl leading-tight;
+        @apply font-bold  text-3xl text-center sm:text-left sm:text-5xl leading-tight;
     }
     .rebena {
         @apply font-light text-base text-[#65788a];

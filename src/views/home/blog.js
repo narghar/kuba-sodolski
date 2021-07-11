@@ -30,7 +30,7 @@ const Blog = ({dotsDisabled}) => {
           summary={posts[0].summary}
         />
       </div>
-      <div className="flex mt-14 gap-x-3">
+      <div className="flex justify-center md:justify-start mt-14 gap-x-3">
         <ArrowLeft />
         <ArrowRight />
       </div>

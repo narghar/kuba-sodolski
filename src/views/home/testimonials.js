@@ -7,11 +7,11 @@ import Testimonial from "components/testimonial";
 
 const Testimonials = ({children}) => {
   return (
-    <section className="pt-36 mb-10">
+    <section className="pt-24 md:pt-36 mb-10">
       <h2 className="primary max-w-[772px] text-primary">
         Nie jest sztuką tłumaczyć słowa. Sztuką jest odać ich sens i emocje
       </h2>
-      <div className="flex gap-x-[123px] mt-24">
+      <div className="hidden md:flex gap-x-[123px] mt-24">
         {testimonials.map((el, i) => (
           <Testimonial
             key={i}
@@ -22,7 +22,15 @@ const Testimonials = ({children}) => {
           />
         ))}
       </div>
-      <div className="flex mt-14 gap-x-3">
+      <div className="visible md:hidden mt-12">
+          <Testimonial
+            text={testimonials[0].text}
+            title={testimonials[0].title}
+            subtitle={testimonials[0].subtitle}
+            avatar={testimonials[0].avatar}
+          />
+      </div>
+      <div className="flex justify-center md:justify-start mt-14 gap-x-3">
         <ArrowLeft />
         <ArrowRight />
       </div>

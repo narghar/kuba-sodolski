@@ -7,6 +7,7 @@ module.exports = {
       ...defaultTheme.screens,
       "2xl": "1300px",
       "3xl": "1536px",
+      "4xl": "1660px"
     },
     extend: {
       fontFamily: {

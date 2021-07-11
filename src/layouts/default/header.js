@@ -11,6 +11,7 @@ import { useRouter } from "next/router";
 import Menu from "./menu";
 
 
+
 const LayoutDefaultHeader = () => {
   const router = useRouter();
   if (router.pathname === "/") {
@@ -35,7 +36,7 @@ const LayoutDefaultHeader = () => {
               />
               <Container>
                 <Menu />
-                <div className="relative mt-[161px]">
+                <div className={router.pathname === "/wpis" ? "relative mt-[94px]" : "relative mt-[161px]"}>
                   <div className="flex flex-wrap  w-full justify-between items-center absolute">
                     <h1
                       key={i}

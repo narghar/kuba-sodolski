@@ -13,10 +13,10 @@ const OfferCards = () => {
       {cards.map((card, i) => (
         <div key={i} className="relative z-10">
           <Image src={card.imageSrc} placeholder="blur" />
-          <div className="absolute bottom-4 px-4  sm:bottom-14 sm:px-16  lg:bottom-6 lg:px-10 xl:bottom-14 xl:px-16">
+          <div className="absolute flex flex-wrap items-center sm:block top-1/2 transform -translate-y-1/2 px-4 sm:top-auto sm:transform-none sm:bottom-14 sm:px-16  lg:bottom-6 lg:px-10 xl:bottom-14 xl:px-16">
             <i className={`${card.icon} text-secondary text-4xl`}></i>
            {card.title}
-            <p className="font-light text-white  text-lg sm:text-xl mt-6">
+            <p className="font-light text-white text-lg sm:text-xl mt-6">
               {card.text}
             </p>
           </div>

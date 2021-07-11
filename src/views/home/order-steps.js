@@ -4,16 +4,16 @@ import Image from "next/image";
 
 const OrderSteps = () => {
   return (
-    <section className="bg-primary relative">
-      <div className="relative mx-auto max-w-base h-[933px] px-5 3xl:px-0 overflow-hidden">
-        <h2 className="text-white max-w-xl relative z-10 mt-36">
+    <section className="bg-primary relative pb-14 md:pb-0">
+      <div className="relative mx-auto max-w-base md:h-[933px] px-5 3xl:px-0 overflow-hidden">
+        <h2 className="text-white max-w-xl relative z-10 mx-auto md:ml-0  md:mt-36 my-14 md:mb-0">
           Jak wygląda zamawianie tłumaczenia. To szybkie i proste.
         </h2>
-        <div className="absolute top-0 right-0 ">
+        <div className="hidden md:absolute top-0 right-0 ">
           <Image src={dots} placeholder="blur" />
         </div>
       </div>
-      <div className="absolute w-full bottom-[232px] flex flex-wrap justify-center gap-[30px]">
+      <div className="md:absolute w-full bottom-[50px] 2xl:bottom-[232px] flex flex-wrap justify-center gap-[30px] ">
         {steps.map((step, i) => (
           <Step
             key={i}
