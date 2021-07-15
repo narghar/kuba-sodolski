@@ -1,3 +1,4 @@
+
 import Tab from "components/tab";
 
 const ReviewTabs = () => {
@@ -10,14 +11,14 @@ const ReviewTabs = () => {
         <div>
           {references.map((ref, i) => (
             <Tab
-            key={i}
-            name={ref.name}
-            position={ref.position}
-            active={ref.active}
+              key={i}
+              name={ref.name}
+              position={ref.position}
+              active={ref.active}
             />
           ))}
         </div>
-        <div className="bg-lighterGray rounded-b-[20px] rounded-tr-[20px] pt-[54px] pr-[51px] pb-[36px] pl-[56px] max-w-[790px] mb-10">
+        <div className="hidden md:block bg-lighterGray rounded-b-[20px] rounded-tr-[20px] pt-[54px] pr-[51px] pb-[36px] pl-[56px] max-w-[790px] mb-10">
           <div>
             <h3 className="font-bold text-primary text-2xl">
               Agnieszka Zaranek
@@ -157,9 +158,6 @@ const references = [
   },
 ];
 
-// var date = new Date(Date.UTC(2020, 12, 15));
-// var options = { year: 'numeric', month: 'long', day: 'numeric' };
-// var dateStr = new Intl.DateTimeFormat('pl-PL', options).format(date);
 
 
 export default ReviewTabs

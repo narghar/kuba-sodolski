@@ -1,10 +1,10 @@
 import image1 from "assets/reviews/01.png";
 import image2 from "assets/reviews/02.png";
 import Image from "next/image";
-                                                                                
+
 const Content = () => {
   return (
-    <section className="grid grid-cols-2 items-center pt-40 pb-44">
+    <section className="grid grid-cols-1 lg:grid-cols-2 items-center gap-x-24 gap-y-12 md:gap-y-36 py-16 sm:pt-40 sm:pb-44">
       <div className="text-primary font-light">
         <p className="text-2xl leading-10">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu diam
@@ -20,14 +20,14 @@ const Content = () => {
           risus eu eleifend iaculis.
         </p>
       </div>
-      <figure className="relative justify-self-end">
+      <figure className="relative justify-self-center lg:justify-self-end order-last xl:order-none ">
         <div className="relative">
           <Image src={image1} />
           <i className="las la-play absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[97px] z-50"></i>
           <div className="absolute bg-primary bg-opacity-40 inset-0 w-full h-cardFix z-40"></div>
         </div>
       </figure>
-      <figure className="relative justify-self-start">
+      <figure className="relative justify-self-center lg:justify-self-start">
         <Image src={image2} />
         <i className="las la-play absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-[97px] z-50"></i>
         <div className="absolute bg-primary bg-opacity-40 inset-0 w-full h-cardFix z-40"></div>
