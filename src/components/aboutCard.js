@@ -6,7 +6,7 @@ const AboutCard = ({item, title, text}) => {
         <span className="text-secondary mr-2">{item}</span>
         {title}
       </h3>
-      <p className="font-normal text-primary text-lg mt-9 leading-[30px]">{text}</p>
+      <p className="font-normal text-primary text-lg mt-5  sm:mt-9 leading-[30px]">{text}</p>
     </div>
   )
 }

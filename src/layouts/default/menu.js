@@ -30,7 +30,7 @@ const Menu = () => {
         <nav
           className={cn(
             active
-              ? "absolute bg-primary w-full text-center top-0 right-0 transition-all duration-500 md:relative md:text-left md:w-auto "
+              ? "absolute bg-primary w-full py-3 text-center top-0 right-0 z-50  transition-all duration-500 md:relative md:text-left md:w-auto md:bg-transparent"
               : "-top-96 md:top-0"
           )}
         >
@@ -50,7 +50,7 @@ const Menu = () => {
             )}
           >
             {items.map((item, i) => (
-              <li key={i}>
+              <li key={i} className="mb-2 sm:mb-0">
                 <Link href={item.href}>
                   <a className="text-white text-base font-medium hover:text-secondary">
                     {item.title}

@@ -10,7 +10,7 @@ const Post = ({ post }) => {
   return (
     <DefaultLayout>
       <Container>
-        <article className="max-w-[878px] mx-auto pt-20 -mb-20">
+        <article className="max-w-[878px] mx-auto pt-16 sm:pt-20 -mb-20">
           <Image src={post.featuredImage?.node.sourceUrl} alt="image" />
           <p className="text-base font-normal text-primary mt-10">
             {post.category}

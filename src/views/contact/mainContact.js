@@ -3,13 +3,15 @@ import React from 'react';
 
 const MainContact = () => {
   return (
-    <section className="grid grid-cols-2 pt-16 pb-28">
-      <div>
-        <h2 className="text-primary text-2xl">Dane kontaktowe</h2>
-        <h3 className="text-primary text-3xl font-bold max-w-md mt-12">
+    <section className="grid grid-cols-1 md:grid-cols-2 md:gap-x-4 gap-y-16 md:gap-y-0 pt-16 pb-16 sm:pb-28">
+      <div className="text-center md:text-left">
+        <h2 className="text-primary text-2xl text-center md:text-left">
+          Dane kontaktowe
+        </h2>
+        <h3 className="text-primary text-3xl font-bold md:max-w-md mt-12 ">
           Osobiście tłumaczę angielski, włoski i francuski
         </h3>
-        <p className="text-primary text-2xl font-light max-w-xl mt-8">
+        <p className="text-primary text-2xl font-light md:max-w-xl mt-8">
           Spytaj mnie o inne języki. Współpracuję z gronem sprawdzonych
           tłumaczy.
         </p>
@@ -28,7 +30,9 @@ const MainContact = () => {
         </div>
       </div>
       <form method="GET" action="/kontakt">
-        <h2 className="text-primary text-2xl">Formularz kontaktowy</h2>
+        <h2 className="text-primary text-2xl text-center md:text-left">
+          Formularz kontaktowy
+        </h2>
         <fieldset className="grid grid-cols-2 gap-x-3 text-base text-formInputText mt-10">
           <input
             type="text"

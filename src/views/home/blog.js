@@ -10,7 +10,9 @@ import Image from "next/image";
 
 const Blog = ({dotsDisabled}) => {
   return (
-    <section className="pt-40 pb-28 relative">
+    <section
+      className={dotsDisabled ? "py-20 sm:pt-40 sm:pb-28 relative" : "pt-40 pb-28 relative"}
+    >
       <div className="hidden sm:flex gap-x-[59px]">
         {posts.map((post, i) => (
           <BlogPost

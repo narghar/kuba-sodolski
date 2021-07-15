@@ -2,14 +2,14 @@ import ServiceCard from "components/serviceCard";
 
 const ServicesOffer= () => {
   return (
-    <section className="pt-16 pb-28">
-      <p className="text-primary text-3xl leading-[3rem] font-medium mb-14">
+    <section className="py-16 sm:pb-28">
+      <p className="text-primary text-xl sm:text-3xl leading-[3rem] font-medium mb-14">
         Skorzystaj z doświadczenia tłumacza, który uczestniczył w setkach
         konferencji. Zamów obsługę u źródła - bez kosztów pośredników. Zyskaj:
         czas, pieniądze, bezpośrednią komunikację i płynną organizację.{" "}
       </p>
       <h2 className="text-primary">Co ofertuję?</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-24 md:gap-y-20">
         {services.map((el, i) => (
           <ServiceCard key={i} item={el.item} title={el.title} text={el.text} />
         ))}

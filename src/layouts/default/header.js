@@ -36,11 +36,11 @@ const LayoutDefaultHeader = () => {
               />
               <Container>
                 <Menu />
-                <div className={router.pathname === "/wpis" ? "relative mt-[94px]" : "relative mt-[161px]"}>
+                <div className={router.pathname === "/wpis" ? "relative mt-8 sm:mt-[94px]" : "relative mt-8 sm:mt-[161px]"}>
                   <div className="flex flex-wrap  w-full justify-between items-center absolute">
                     <h1
                       key={i}
-                      className="text-white font-bold text-4xl leading-tight; "
+                      className="text-white font-bold text-center sm:text-left text-3xl sm:text-4xl leading-tight; "
                       style={{ maxWidth: page.hedingMaxWidth + "px" }}
                     >
                       {page.heading}

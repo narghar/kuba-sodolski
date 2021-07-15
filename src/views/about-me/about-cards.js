@@ -2,7 +2,7 @@ import AboutCard from "components/aboutCard";
 
 const AboutCards = () => {
   return (
-    <section className="pt-44 pb-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-20">
+    <section className="pt-16 sm:pt-44 pb-16 sm:pb-32 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-24 gap-y-10 md:gap-y-20">
       {cards.map((card, i) => (
         <AboutCard key={i} item={card.item} title={card.title} text={card.text} />
       ))}

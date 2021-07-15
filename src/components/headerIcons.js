@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const HeaderIcons = () => {
   return (
-    <div className="flex items-center">
+    <div className="hidden sm:flex items-center">
       <Image src={pstk} placeholder="blur" />
       <div className="ml-[72px]">
         <Image src={eu} />

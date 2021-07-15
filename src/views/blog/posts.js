@@ -3,7 +3,7 @@ import BlogPost from "components/blogPost";
 
 const Posts = () => {
   return (
-    <section className="grid grid-cols-1 w-full text-center justify-center  lg:w-auto lg:text-left lg:grid-cols-2 pt-24 pb-32 gap-x-12 gap-y-20">
+    <section className="grid grid-cols-1 w-full text-center justify-center  lg:w-auto lg:text-left lg:grid-cols-2 py-16 sm:pt-24 sm:pb-32 gap-x-12 gap-y-12 sm:gap-y-20">
       {posts.map((post, i) => (
         <BlogPost
           key={i}
