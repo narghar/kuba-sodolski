@@ -21,12 +21,16 @@ const Menu = () => {
         ))}
       </div>
       <div className="flex justify-between items-center mt-5 sm:mt-0">
-        <div className="flex items-center gap-5">
-          <Image src={logo} placeholder="blur" />
-          <p className="text-white font-bold text-[21px]">
-            Jakub <span className="text-secondary">S</span>odolski
-          </p>
-        </div>
+        <Link href="/">
+          <a>
+            <div className="flex items-center gap-5">
+              <Image src={logo} placeholder="blur" />
+              <p className="text-white font-bold text-[21px]">
+                Jakub <span className="text-secondary">S</span>odolski
+              </p>
+            </div>
+          </a>
+        </Link>
         <nav
           className={cn(
             active
@@ -60,11 +64,11 @@ const Menu = () => {
             ))}
             <li>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/jakub-sodolski"
                 className="text-white hover:text-secondary"
                 target="_blank"
               >
-                <i className="lab la-linkedin-in"></i>
+                <i className="lab la-linkedin-in text-xl mt-[-2px]"></i>
               </a>
             </li>
           </ul>

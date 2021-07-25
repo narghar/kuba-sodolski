@@ -3,6 +3,8 @@ import photo from "assets/home/about/photo.png";
 import pstk from "assets/home/about/pst.png";
 import Button from "components/button";
 import Image from "next/image";
+import Link from "next/link";
+
 const About = () => {
   return (
     <section className="flex flex-col items-center lg:flex-row lg:items-start gap-x-14 pt-32 sm:pt-56 ">
@@ -32,7 +34,9 @@ const About = () => {
           </p>
           <Image src={pstk} placeholder="blur" />
         </div>
-        <Button size="normal">Więcej o mnie</Button>
+        <Link href="/o-mnie" passHref>
+          <Button size="normal">Więcej o mnie</Button>
+        </Link>
       </div>
     </section>
   );

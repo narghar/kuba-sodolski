@@ -5,6 +5,7 @@ import audio from 'assets/header/audio.png';
 import Button from "components/button";
 import Container from "components/container";
 import Image from "next/image";
+import Link from "next/link";
 
 const LayoutDefaultFooter = () => {
   return (
@@ -15,14 +16,16 @@ const LayoutDefaultFooter = () => {
             <h2 className="text-white mt-3 text-center md:text-left">
               Potrzebujesz tłumacza? Organizujesz wydarzenie? Masz pytania?
             </h2>
-            <Button size="normal" className="text-primary mt-10">
-              Skontaktuj się
-            </Button>
+            <Link href="/kontakt" passHref>
+              <Button size="normal" className="text-primary mt-10">
+                Skontaktuj się
+              </Button>
+            </Link>
           </div>
           <div className="mt-5 md:justify-self-end">
             <p className="text-white font-light text-lg">Zadzwoń do mnie</p>
             <p className="text-secondary font-bold text-3xl mt-2">
-              505 92 69 77
+              <a href="tel:+48505926977">505 92 69 77</a>
             </p>
             <p className="text-white font-light text-lg mt-12 mb-2">
               Napisz do mnie
@@ -49,9 +52,20 @@ const LayoutDefaultFooter = () => {
               </p>
               <Image src={pstk} placeholder="blur" />
             </div>
-            <div className="flex items-center rebena mt-6 sm:mt-0" >
+
+            <div className="flex items-center rebena mt-6 sm:mt-0">
               <p className="mr-4">Projekt i realizacja:</p>
-              <Image src={rebena} placeholder="blur" />
+              <a
+                href="https://rebenagesta.com/"
+                target="_blank"
+                className="transition-opacity hover:opacity-80"
+              >
+                <Image
+                  src={rebena}
+                  placeholder="blur"
+                  alt="Realizacja Re Bena Gesta"
+                />
+              </a>
             </div>
           </div>
         </div>

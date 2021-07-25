@@ -1,5 +1,7 @@
 import Button from "components/button";
 import OfferCards from "components/offerCards";
+import Link from "next/link";
+
 const About = () => {
   return (
     <section className="pt-20 pb-20 md:pt-48 md:pb-44">
@@ -16,7 +18,9 @@ const About = () => {
           Jestem po to, by pomóc i Tobie w dopięciu na ostatni guzik Twojego
           eventu, spotkania czy konferencji
         </h3>
-        <Button size="normal">Zamów tłumaczenie</Button>
+        <Link href="/kontakt" passHref>
+          <Button size="normal">Zamów tłumaczenie</Button>
+        </Link>
       </div>
     </section>
   );

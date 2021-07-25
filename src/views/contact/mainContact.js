@@ -1,4 +1,3 @@
-import Button from 'components/button';
 import React from 'react';
 
 const MainContact = () => {
@@ -17,7 +16,9 @@ const MainContact = () => {
         </p>
         <div className="mt-14">
           <p className="text-primary font-medium text-base">Zadzwoń do mnie</p>
-          <p className="text-secondary font-bold text-3xl mt-3">505 92 69 77</p>
+          <p className="text-secondary font-bold text-3xl mt-3">
+            <a href="tel:+48505926977">505 92 69 77</a>
+          </p>
           <p className="text-primary font-medium text-base mt-9 mb-3">
             Napisz do mnie
           </p>
@@ -80,9 +81,13 @@ const MainContact = () => {
             Akceptuję regulamin
           </label>
         </div>
-        <Button size="normal" type="submit">
+        <button
+          type="submit"
+          className="transition duration-300 ease-in-out
+        shadow-sm hover:shadow-md text-white bg-secondary hover:bg-yellow-700 focus:outline-none px-14 py-[13px] text-lg font-bold rounded-[15px]"
+        >
           Wyślij wiadomość
-        </Button>
+        </button>
       </form>
     </section>
   );

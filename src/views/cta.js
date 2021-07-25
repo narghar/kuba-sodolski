@@ -1,6 +1,7 @@
 import bgUrl from "assets/cta-bg.png";
 import Button from "components/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -9,16 +10,24 @@ const CTA = () => {
         <Image src={bgUrl} placeholder="blur" quality="100" />
       </div>
 
-        <div className="z-[-1] 2xl:hidden">
-          <Image src={bgUrl} placeholder="blur" layout="fill" objectFit="cover" objectPosition="center" />
-        </div>
+      <div className="z-[-1] 2xl:hidden">
+        <Image
+          src={bgUrl}
+          placeholder="blur"
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
+      </div>
 
       <div className="absolute bottom-0 2xl:bottom-auto left-1/2 transform -translate-x-1/2 2xl:w-[1300px] w-full ">
         <div className="absolute left-[10.5vw] bottom-[5vw] 2xl:text-right">
           <h4 className="text-white font-bold text-3xl max-w-[430px] mb-9">
             Zamów tłumaczenie w dogodnym dla siebie terminie
           </h4>
-          <Button size="normal">Wyślij wiadomość</Button>
+          <Link href="/kontakt" passHref>
+            <Button size="normal">Wyślij wiadomość</Button>
+          </Link>
         </div>
       </div>
     </section>
