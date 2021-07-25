@@ -1,4 +1,5 @@
 import Container from "components/container";
+import Wrapper from "components/wrapper";
 import DefaultLayout from "layouts/default";
 import CTA from "views/cta";
 import Blog from "views/home/blog";
@@ -11,9 +12,11 @@ const Faq = () => {
         <MainFAQ />
       </Container>
       <CTA />
-      <Container>
-        <Blog dotsDisabled="true" />
-      </Container>
+      <Wrapper>
+        <Container>
+          <Blog dotsDisabled="true" />
+        </Container>
+      </Wrapper>
     </DefaultLayout>
   );
 };

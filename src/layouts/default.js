@@ -6,7 +6,7 @@ const DefaultLayout = ({ children }) => {
   return (
     <>
       <LayoutDefaultMeta />
-      <div className="flex flex-col max-w-8xl mx-auto h-screen overflow-x-hidden">
+      <div className="flex flex-col max-w-8xl mx-auto h-screen">
         <LayoutDefaultHeader />
         <main>{children}</main>
         <LayoutDefaultFooter />

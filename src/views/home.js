@@ -1,5 +1,6 @@
 import Container from "components/container";
 import MoreReference from "components/moreReference";
+import Wrapper from "components/wrapper";
 import DefaultLayout from "layouts/default";
 import About from "views/home/about";
 import Blog from "views/home/blog";
@@ -17,16 +18,20 @@ const Home = () => {
         <Offer />
       </Container>
       <OrderSteps />
-      <Container>
-        <WhyUs />
-      </Container>
+      <Wrapper>
+        <Container>
+          <WhyUs />
+        </Container>
+      </Wrapper>
       <Stats />
-      <Container>
-        <Testimonials>
-          <MoreReference />
-        </Testimonials>
-        <Blog />
-      </Container>
+      <Wrapper>
+        <Container>
+          <Testimonials>
+            <MoreReference />
+          </Testimonials>
+          <Blog />
+        </Container>
+      </Wrapper>
     </DefaultLayout>
   );
 };

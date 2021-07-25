@@ -1,4 +1,5 @@
 import Container from "components/container";
+import Wrapper from "components/wrapper";
 import DefaultLayout from "layouts/default";
 import CTA from "./cta";
 import Stats from "./home/stats";
@@ -12,9 +13,11 @@ const Services = () => {
         <ServicesOffer />
       </Container>
       <CTA />
-      <Container>
-        <Testimonials />
-      </Container>
+      <Wrapper>
+        <Container>
+          <Testimonials />
+        </Container>
+      </Wrapper>
       <Stats />
     </DefaultLayout>
   );

@@ -11,8 +11,7 @@ import { useRouter } from "next/router";
 import Menu from "./menu";
 
 
-
-const LayoutDefaultHeader = () => {
+const LayoutDefaultHeader = ({path, bg, bgHeight, heading, hedingMaxWidth, icons}) => {
   const router = useRouter();
   if (router.pathname === "/") {
     return (

@@ -1,4 +1,5 @@
 import Container from "components/container";
+import Wrapper from "components/wrapper";
 import DefaultLayout from "layouts/default";
 import Blog from "views/home/blog";
 import CTA from "./cta";
@@ -13,9 +14,11 @@ const Reviews = () => {
         <ReviewTabs />
       </Container>
       <CTA />
-      <Container>
-        <Blog dotsDisabled="true" />
-      </Container>
+      <Wrapper>
+        <Container>
+          <Blog dotsDisabled="true" />
+        </Container>
+      </Wrapper>
     </DefaultLayout>
   );
 };
