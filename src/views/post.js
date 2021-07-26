@@ -1,4 +1,5 @@
 import Container from 'components/container';
+import Hero from 'components/hero';
 import RelatedPost from 'components/relatedPost';
 import Wrapper from 'components/wrapper';
 import DefaultLayout from 'layouts/default';
@@ -9,6 +10,14 @@ import Blog from './home/blog';
 const Post = ({ post }) => {
   return (
     <DefaultLayout>
+      <Hero
+        bg={page.bg}
+        bgHeight={page.bgHeight}
+        heading={page.heading}
+        hedingMaxWidth={page.hedingMaxWidth}
+        headingPadding={page.headingPadding}
+        icons={page.icons}
+      />
       <Wrapper>
         <Container>
           <article className="max-w-[878px] mx-auto pt-16 sm:pt-20 -mb-20">
@@ -24,9 +33,17 @@ const Post = ({ post }) => {
             {/* <PostDate dateString={post.date} /> */}
             <div className="post-content">{parseHtml(post.content)}</div>
             <footer className="pt-9">
-              <h3 className="text-primary text-2xl font-bold mb-10">Podobne wpisy</h3>
+              <h3 className="text-primary text-2xl font-bold mb-10">
+                Podobne wpisy
+              </h3>
               {related.map((el, i) => (
-                <RelatedPost key={i} title={el.title} category={el.category} time={el.time} href={el.href} />
+                <RelatedPost
+                  key={i}
+                  title={el.title}
+                  category={el.category}
+                  time={el.time}
+                  href={el.href}
+                />
               ))}
             </footer>
           </article>
@@ -61,5 +78,15 @@ const related = [
     href: "/wpis",
   },
 ];
+
+const page = {
+  bg: 1,
+  bgHeight: "h-96 sm:h-[520px]",
+  heading:
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam dictum tortor eu lorem commodo, sed lacinia est accumsan",
+  hedingMaxWidth: 640,
+  headingPadding: "sm:pt-[202px]",
+  icons: true,
+};
 
 export default Post;

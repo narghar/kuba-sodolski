@@ -5,6 +5,7 @@ import DefaultLayout from "layouts/default";
 import About from "views/home/about";
 import Blog from "views/home/blog";
 import Offer from "views/home/offer";
+import HomeHero from "./home/homeHero";
 import OrderSteps from "./home/order-steps";
 import Stats from "./home/stats";
 import Testimonials from "./home/testimonials";
@@ -13,6 +14,7 @@ import WhyUs from "./home/why-us";
 const Home = () => {
   return (
     <DefaultLayout>
+      <HomeHero />
       <Container>
         <About />
         <Offer />
@@ -35,5 +37,7 @@ const Home = () => {
     </DefaultLayout>
   );
 };
+
+
 
 export default Home;
