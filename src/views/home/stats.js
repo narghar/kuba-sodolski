@@ -7,7 +7,7 @@ const Stats = () => {
       <div className="hidden lg:block">
         <Image src={bg} placeholder="blur" quality="90" />
       </div>
-      <div className="h-[500px] lg:hidden">
+      <div className="h-[540px] lg:hidden">
         <Image src={bg} placeholder="blur" layout="fill" objectFit="cover" quality="90" />
       </div>
       <div className="absolute grid sm:grid-cols-stats md:gap-x-[20vw] 3xl:gap-x-[390px]  gap-y-[6vw]  top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
