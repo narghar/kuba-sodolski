@@ -20,7 +20,6 @@ const OrderSteps = () => {
             icon={step.icon}
             title={step.title}
             text={step.text}
-            active={step.active}
           />
         ))}
       </div>
@@ -35,31 +34,26 @@ const steps = [
     icon: "las la-file-alt",
     title: "Krok 1",
     text: "Wypełniasz formularz kontaktowy",
-    active: true,
   },
   {
     icon: "las la-file-alt",
     title: "Krok 2",
     text: "Kontaktuje się z Tobą w ciągu 24 godzin",
-    active: false,
   },
   {
     icon: "las la-file-alt",
     title: "Krok 3",
     text: "Dobieramy wariant  tłumaczenia ",
-    active: false,
   },
   {
     icon: "las la-file-alt",
     title: "Krok 4",
     text: "Otrzymujesz indywidualną ofertę",
-    active: false
   },
   {
     icon: "las la-file-alt",
     title: "Krok 5",
     text: "Cieszysz się płynną komunikacją",
-    active: false
   },
 
 ];
