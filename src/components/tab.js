@@ -1,5 +1,6 @@
 import cn from "classnames";
-const Tab = ({ name, position, active }) => {
+
+const Tab = ({ name, position, url, active }) => {
   return (
     <div
       className={cn(
@@ -9,7 +10,7 @@ const Tab = ({ name, position, active }) => {
     >
       <div
         className={cn(
-          "w-[58px] h-[58px] bg-primary rounded-full",
+          "w-[58px] h-[58px] bg-primary rounded-full flex-shrink-0",
           active && "ml-7"
         )}
       ></div>
@@ -21,7 +22,7 @@ const Tab = ({ name, position, active }) => {
       </p>
       <div className={cn(active ? 'block' : 'hidden', "md:hidden bg-lighterGray rounded-b-[20px] rounded-tr-[20px] pt-[54px] pr-[51px] pb-[36px] pl-[56px] max-w-[790px] mb-10")}>
         <div>
-          <h3 className="font-bold text-primary text-2xl">Agnieszka Zaranek</h3>
+          <h3 className="font-bold text-primary text-2xl">{name}</h3>
           <time
             dateTime="2020-12-15"
             className="text-primary text-lg font-medium"
@@ -29,11 +30,11 @@ const Tab = ({ name, position, active }) => {
             15 grudnia 2020
           </time>
           <a
-            href="https://www.linkedin.com/in/agnieszka-zaranek-70885490/"
+            href={url}
             target="_blank"
             className="text-secondary text-lg font-medium block"
           >
-            https://www.linkedin.com/in/agnieszka-zaranek-70885490/
+            {url}
           </a>
         </div>
         <div className="text-lg font-normal text-primary mt-8 leading-[30px]">
