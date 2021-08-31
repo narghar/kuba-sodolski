@@ -53,19 +53,21 @@ const LayoutDefaultFooter = () => {
               <Image src={pstk} placeholder="blur" />
             </div>
 
-            <div className="flex items-center rebena mt-6 sm:mt-0">
-              <p className="mr-4">Projekt i realizacja:</p>
+            <div className="flex  rebena mt-6 sm:mt-0 flex-wrap">
+              <p className="mr-4 w-1/3">Projekt:</p>
               <a
                 href="https://rebenagesta.com/"
                 target="_blank"
-                className="transition-opacity hover:opacity-80"
+                className="transition-opacity hover:opacity-80 w-1/3 "
               >
                 <Image
                   src={rebena}
                   placeholder="blur"
-                  alt="Realizacja Re Bena Gesta"
+                  alt="Projekt Re Bena Gesta"
                 />
               </a>
+              <p className="mr-4 w-1/3">Realizacja:</p>
+              <a href="https://www.github.com/narghar/" className="text-white hover:text-secondary">Igor Wysocki</a>
             </div>
           </div>
         </div>
